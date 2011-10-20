@@ -79,14 +79,14 @@ ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover
  
 ul#topnav li .sub 
 	@extend .corner-bottom
+	//@extend .opaque
 	display: none
 	position: absolute
 	+float-left
 	top: 2.7em
-	left: 1px
+	left: 0px
 	background: $nav-dropdown-bg
 	padding: 5px 0 6px 0
-	border-top: 2px solid $nav-dropdown-accent
 	z-index: 50
 
 ul#topnav li .row 
@@ -135,7 +135,7 @@ ul#topnav .sub ul li h2
 
 
 //Navigation Active Classes
-body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three
+body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six
 	@extend .navigation-hover
 
 .navigation-hover
